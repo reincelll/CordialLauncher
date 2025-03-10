@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cordial Launcher - Game Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cordial Launcher</h1>
+        </header>
+
+        <div class="games-library">
+            <div class="game-card" onclick="openPopup(1)">
+                <div class="game-image" style="background-image: url('https://via.placeholder.com/300x400?text=Game+1');"></div>
+                <div class="game-info">
+                    <h3>Game Title 1</h3>
+                    <p>Game description goes here...</p>
+                </div>
+            </div>
+
+            <div class="game-card" onclick="openPopup(2)">
+                <div class="game-image" style="background-image: url('https://via.placeholder.com/300x400?text=Game+2');"></div>
+                <div class="game-info">
+                    <h3>Game Title 2</h3>
+                    <p>Game description goes here...</p>
+                </div>
+            </div>
+
+            <div class="game-card" onclick="openPopup(3)">
+                <div class="game-image" style="background-image: url('https://via.placeholder.com/300x400?text=Game+3');"></div>
+                <div class="game-info">
+                    <h3>Game Title 3</h3>
+                    <p>Game description goes here...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">×</span>
+                <div class="popup-title">
+                    <h2>Game Title</h2>
+                </div>
+                <div class="popup-slideshow">
+                    <img src="https://via.placeholder.com/300x400?text=Game+Image+1" alt="Game Image 1">
+                    <img src="https://via.placeholder.com/300x400?text=Game+Image+2" alt="Game Image 2">
+                </div>
+                <div class="popup-description">
+                    <p>This is the full description of the game...</p>
+                </div>
+                <button class="download-btn">Download</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
